@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "htact": "^1.0.1",
-    "jquery": "^3.7.1"
+    "htact": "^1.0.1"
   }
 }

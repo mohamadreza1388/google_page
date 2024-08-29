@@ -1,5 +1,5 @@
 import {HtAct} from "../node_modules/htact/HtAct.js";
 
-$(function () {
+document.addEventListener("DOMContentLoaded", () => {
     HtAct(true, "console", "../components/", ".html")
 })
