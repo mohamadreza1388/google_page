@@ -70,6 +70,10 @@ header {
     text-decoration: underline;
 }
 
+main {
+    height: calc(100vh - 106px);
+}
+
 .img-box {
     width: 100%;
     display: flex;
@@ -168,4 +172,22 @@ header {
 .google-btn:focus-within {
     border: 1px solid blue;
     outline: 0;
+}
+
+footer {
+    height: 46px;
+    width: 100%;
+    background-color: var(--primary-color);
+    padding-inline: 35px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+footer .links {
+    gap: 30px;
+}
+
+footer .links a:is(:link, :visited) {
+    font-size: 14px;
 }
