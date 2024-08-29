@@ -135,14 +135,16 @@ header {
     height: 24px;
     cursor: pointer;
 }
-.btn-wrapper{
+
+.btn-wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
     margin-top: 30px;
     gap: 15px;
 }
-.google-btn{
+
+.google-btn {
     background-color: #F8F9FA;
     padding: 0 16px;
     height: 36px;
@@ -154,7 +156,7 @@ header {
     transition: all 300ms;
 }
 
-.google-btn:hover{
+.google-btn:hover {
     box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
     background-color: #f8f9fa;
     border: 1px solid #dadce0;
@@ -163,7 +165,7 @@ header {
 
 .google-btn:focus,
 .google-btn:focus-visible,
-.google-btn:focus-within{
+.google-btn:focus-within {
     border: 1px solid blue;
     outline: 0;
 }
