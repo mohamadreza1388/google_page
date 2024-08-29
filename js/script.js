@@ -1,3 +1,5 @@
+import {HtAct} from "../node_modules/htact/HtAct.js";
+
 $(function () {
-    console.log("ok")
+    HtAct(true, "console", "../components/", ".html")
 })
