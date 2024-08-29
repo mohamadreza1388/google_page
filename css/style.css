@@ -1,5 +1,7 @@
 :root {
     --primary-color: #F2F2F2;
+    --secondary-color: #dfe1e5;
+    --third-color: #9aa0a6;
 }
 
 * {
@@ -13,7 +15,7 @@ body {
     font-family: Arial, sans-serif;
 }
 
-header{
+header {
     width: 100%;
     height: 60px;
     display: flex;
@@ -68,9 +70,100 @@ header{
     text-decoration: underline;
 }
 
-.img-box{
+.img-box {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.search-form {
+    border: 1px solid var(--secondary-color);
+    width: 100%;
+    max-width: 584px;
+    min-height: 48px;
+    border-radius: 10000px;
+    margin-inline: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    gap: 15px;
+    padding-inline: 15px;
+}
+
+.search-form:hover {
+    box-shadow: 0 1px 6px rgba(32, 33, 36, .28);
+    border-color: transparent;
+}
+
+.hidden {
+    display: none;
+    all: unset;
+    visibility: hidden;
+    opacity: 0;
+    position: absolute;
+    top: -1000%;
+    right: -1000%;
+}
+
+.search-img {
+    width: 20px;
+    height: 20px;
+    fill: var(--third-color);
+}
+
+.area-input {
+    flex: 1;
+    border: 0;
+    resize: none;
+    overflow: hidden;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    font-size: 16px;
+    min-height: 48px;
+}
+
+.area-input:focus {
+    outline: 0;
+}
+
+.speck-img,
+.google-lenz-img {
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+.btn-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+.google-btn{
+    background-color: #F8F9FA;
+    padding: 0 16px;
+    height: 36px;
+    border-radius: 4px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    color: #3c4043;
+    cursor: pointer;
+    transition: all 300ms;
+}
+
+.google-btn:hover{
+    box-shadow: 0 1px 1px rgba(0, 0, 0, .1);
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+}
+
+.google-btn:focus,
+.google-btn:focus-visible,
+.google-btn:focus-within{
+    border: 1px solid blue;
+    outline: 0;
 }
