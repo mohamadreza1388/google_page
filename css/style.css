@@ -10,7 +10,7 @@
 
 body {
     background: #fff;
-    font-family: Arial,sans-serif;
+    font-family: Arial, sans-serif;
 }
 
 header {
@@ -50,18 +50,20 @@ header .profile img {
     border-radius: 50%;
 }
 
-.links{
+.links {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 14px;
     margin-right: 4px;
 }
-.links a:is(:link, :visited){
+
+.links a:is(:link, :visited) {
     color: #1f1f1f;
     font-size: 13px;
     text-decoration: none;
 }
-.links a:is(:link, :visited):hover{
+
+.links a:is(:link, :visited):hover {
     text-decoration: underline;
 }
